@@ -1,13 +1,14 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
-const htmlWebpackPlugin = new HtmlWebPackPlugin({
-  template: "./src/index.html",
-  filename: "./index.html"
+const htmlPlugin = new HtmlWebPackPlugin({
+	template: './src/index.html',
+	filename: './index.html'
 });
 
 module.exports = {
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -15,10 +16,10 @@ module.exports = {
         }
       },
       {
-        test: /\.less$/,
-        loader: "less-loader"
+	test: /\.css$/,
+        use: ["style-loader", "css-loader"]
       }
     ]
   },
-  plugins: [htmlWebpackPlugin]
+  plugins: [htmlPlugin]
 };
