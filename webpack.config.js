@@ -7,6 +7,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
 
 module.exports = {
   module: {
+    entry: "./src",
     rules: [
       {
         test: /\.js$/,
