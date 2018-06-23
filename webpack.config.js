@@ -8,18 +8,19 @@ const htmlPlugin = new HtmlWebPackPlugin({
 module.exports = {
   entry: './src/main.js',
   module: {
-    rules: [{
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
+    rules: [
       {
-        test: /\.less$/,
-        use: ["style-loader", "less-loader"]
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
       }
     ]
+  },
+  externals: {
+    'react': 'React'
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx']
   },
   plugins: [htmlPlugin]
 };
