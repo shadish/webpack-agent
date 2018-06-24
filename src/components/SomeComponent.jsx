@@ -2,7 +2,12 @@ import React, { Component } from "react";
 
 export default class SomeComponent extends Component {
 	render() {
-		console.log("rendering");
-		return (<div className="brownish">Some Component</div>);
+		var tiger = new Image();
+		return (
+			<div >
+			<span className='brownish'>Some Component</span>
+			<img src={require('../images/harimau.jpg')}/>
+			</div>
+		);
 	}
 }
