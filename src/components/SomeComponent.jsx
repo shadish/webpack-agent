@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 export default class SomeComponent extends Component {
 	render() {
-		return <div>Hello world!</div>;
+		console.log("rendering");
+		return (<div>Some Component</div>);
 	}
 }

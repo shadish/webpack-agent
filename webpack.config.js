@@ -1,12 +1,10 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-
-const htmlPlugin = new HtmlWebPackPlugin({
-  template: './src/index.html',
-  filename: './index.html'
-});
+const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: [
+    'react-hot-loader/patch',
+    './src/index.js'
+  ],
   module: {
     rules: [
       {
@@ -16,11 +14,19 @@ module.exports = {
       }
     ]
   },
-  externals: {
-    'react': 'React'
-  },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['*','.js','.jsx']
   },
-  plugins: [htmlPlugin]
+  output: {
+    path: __dirname +'/dist',
+    publicPath:'/',
+    filename:'bundle.js'
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  devServer: {
+    contentBase:"./dist",
+    hot: true
+  }
 };
