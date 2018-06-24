@@ -3,6 +3,6 @@ import React, { Component } from "react";
 export default class SomeComponent extends Component {
 	render() {
 		console.log("rendering");
-		return (<div>Some Component</div>);
+		return (<div className="brownish">Some Component</div>);
 	}
 }
