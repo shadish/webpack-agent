@@ -1,3 +1,4 @@
+const copy = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -23,7 +24,8 @@ module.exports = {
     filename:'bundle.js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new copy([{from:'static',to:'static'}])
   ],
   devServer: {
     contentBase:"./dist",
