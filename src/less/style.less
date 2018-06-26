@@ -1,11 +1,18 @@
-@some-blue = #5B830D;
+@some-color: #242;
+@some-light-color: #5A5;
 
-.painted-blue {
-  background-color: @some-blue;
+.painted {
+  background-color: @some-color;
+  color: @some-light-color;
+}
+
+* {
+  display: flex;
+  border: 1px solid @some-light-color;
 }
 
 body {
   margin: 0;
   padding: 0;
-  .painted-blue;
+  .painted;
 }
