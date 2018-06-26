@@ -1,18 +1,29 @@
 @some-color: #242;
 @some-light-color: #5A5;
+@some-dark-color: #020;
+@some-lightest-color: #DFD;
 
 .painted {
   background-color: @some-color;
   color: @some-light-color;
 }
-
+ 
 * {
-  display: flex;
-  border: 1px solid @some-light-color;
+  background-color: darkslategray;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   .painted;
+
+  font-family: 'AlexBrush'; 
+   
+  display: flex;
+  div {
+    :first-child {
+      border: 1px solid @some-lightest-color;
+    }
+
+    border: 1px solid @some-dark-color;
+    padding: 1em;
+  }
 }

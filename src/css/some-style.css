@@ -1,23 +1,13 @@
 
 @font-face {
-       font-family: 'AlexBrush';
-       src:  url('../fonts/AlexBrush-Regular.ttf') format('ttf');
-       font-weight: 600;
-       font-style: normal;
-    }
+    font-family: 'AlexBrush';
+    src:  url('../fonts/alex-brush-v8-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: cursive;
+  }
 
-* {
-     margin: 0;
-     padding: 0;
-     font-family: 'AlexBrush';
-}
-
-/* body {
-    background-color: #134;
-    color: #CD0;
-}
-
-.brownish {
-    background-color: saddlebrown;
+.tigerLabel {
+    color: #C50;
+    text-align: center;
     font-family: 'AlexBrush'; 
-}*/
+}
