@@ -3,10 +3,16 @@ const webpack = require('webpack');
 module.exports = {
   entry: [
     'react-hot-loader/patch',
-    './src/index.js'
+    './src/index.ts'
   ],
+  devtool: 'inline-source-map',
   module: {
     rules: [
+      {
+	test: /\.tsx?$/,
+	use: 'ts-loader',
+        exclude: /node_modules/
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -38,7 +44,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['*','.js','.jsx']
+    extensions: ['*','.js','.jsx', '.tsx', '.ts']
   },
   output: {
     path: __dirname +'/dist',
