@@ -9,8 +9,8 @@ module.exports = {
   module: {
     rules: [
       {
-	test: /\.tsx?$/,
-	use: 'ts-loader',
+        test: /\.tsx?$/,
+        use: 'ts-loader',
         exclude: /node_modules/
       },
       {
@@ -38,24 +38,24 @@ module.exports = {
         use: ['file-loader']
       },
       {
-          test: /\.(woff|woff2|eot|ttf|otf)$/,
-          use: ['file-loader']
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ['file-loader']
       }
     ]
   },
   resolve: {
-    extensions: ['*','.js','.jsx', '.tsx', '.ts']
+    extensions: ['*', '.js', '.jsx', '.tsx', '.ts']
   },
   output: {
-    path: __dirname +'/dist',
-    publicPath:'/',
-    filename:'bundle.js'
+    path: __dirname + '/dist',
+    publicPath: '/',
+    filename: 'bundle.js'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
-    contentBase:"./dist",
+    contentBase: "./dist",
     hot: true
   }
 };

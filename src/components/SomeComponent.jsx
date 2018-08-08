@@ -5,8 +5,8 @@ export default class SomeComponent extends Component {
 		var tiger = new Image();
 		return (
 			<div >
-			<div className='tigerLabel'>This is a Tiger.</div>
-			<img src={require('../images/harimau.jpg')}/>
+				<div className='tigerLabel'>This is a Tiger.</div>
+				<img src={require('../images/harimau.jpg')} />
 			</div>
 		);
 	}
