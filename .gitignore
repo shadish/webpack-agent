@@ -1,6 +1,5 @@
 # Webpack output
-dist/bundle.js
-dist/*.jpg
+dist/
 
 # Logs
 logs
