@@ -1,3 +1,14 @@
-*Note: this is presently not working with the webpack setup, and I intend to come back to fix it.
+This is intented as a template React/Webpack/TypeScript basic with my prefered setup.
 
-Basic template of a webpack React project with some standard assets and using LESS style loading.
+#TODO
+
+1. Re-include fonts
+1. Re-include css
+1. Re-include less
+1. Re-include images
+1. Add Jest loader and tests
+1. Add Prettier configuration
+1. Thread webpack build execution
+1. Add Redux
+1. Introduce the webpack server for continous development mode.
+1. Complete README with manifesto of inspirations.
