@@ -1,4 +1,6 @@
 import * as React from 'react';
+import '../css/some-style.css';
+import '../less/style.less';
 
 export interface HelloProps {
   compiler: string;
