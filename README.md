@@ -2,10 +2,8 @@ This is intented as a template React/Webpack/TypeScript basic with my prefered s
 
 #TODO
 
-1. Re-include fonts
-1. Re-include css
-1. Re-include less
-1. Re-include images
+1. Import CSS, LESS, fonts, and images
+1. Fix dev-server hot swapping.
 1. Add Jest loader and tests
 1. Add Prettier configuration to either package.json or .prettierrc (and add .pretterignore for reference)
 1. Thread webpack build execution
