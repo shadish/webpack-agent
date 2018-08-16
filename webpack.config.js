@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: ["react-hot-loader/patch", "./src/index.tsx"],
@@ -46,12 +47,18 @@ module.exports = {
     react: "React",
     "react-dom": "ReactDOM"
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
-//   devServer: {
-//     contentBase: "./dist",
-//     historyApiFallback: {
-//       index: "./index.html"
-//     },
-//     hot: true
-//   }
+  plugins: [
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './src/index.html',
+      filename: './index.html',
+      title: 'Plugin-based Title',
+      myPageHeader: 'Plugin-based Header'
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  devServer: {
+    contentBase: "./dist",
+    hot: true
+  }
 };
