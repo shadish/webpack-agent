@@ -1,7 +1,7 @@
 import * as React from 'react';
 import '../css/some-style.css';
 import '../less/style.less';
-import "../images/harimau.jpg";
+import * as monster_cat from "../images/monster_cat.png";
 
 export interface HelloProps {
   compiler: string;
@@ -14,11 +14,11 @@ export class Hello extends React.Component<HelloProps, {}> {
   render() {
     return (
       <div>
-      <h1>
-        Hello from {this.props.compiler} and {this.props.framework}!
+        <h1>
+          Hello from {this.props.compiler} and {this.props.framework}!
       </h1>
-      <span className="tigerLabel">Tiger</span>
-      <img src="harimau.jpg"/>
+        <span className="tigerLabel">Tiger</span>
+        <monster_cat />
       </div>
     );
   }

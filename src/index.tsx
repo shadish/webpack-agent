@@ -1,5 +1,3 @@
-// let React = require('react');
-// let ReactDOM = require('react-dom');
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 

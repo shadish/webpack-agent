@@ -1,29 +1,30 @@
-@some-color: #242;
-@some-light-color: #5A5;
-@some-dark-color: #020;
-@some-lightest-color: #DFD;
-
-.painted {
-  background-color: @some-color;
-  color: @some-light-color;
-}
+@some-background-color: #334;
+@some-foreground-color: #AAC;
+@accent-one: #459;
+@accent-two: #99A;
  
 * {
-  background-color: darkslategray;
+  background-color: @some-background-color;
+  color: @some-foreground-color;
+}
+
+.painted {
+  background-color: @accent-one;
+  color: @accent-two;
 }
 
 body {
   .painted;
 
-  font-family: 'AlexBrush'; 
+  font-family: 'Josefin Sans'; 
    
   display: flex;
   div {
     :first-child {
-      border: 1px solid @some-lightest-color;
+      border: 1px solid @accent-two;
     }
 
-    border: 1px solid @some-dark-color;
+    border: 1px solid @accent-one;
     padding: 1em;
   }
 }

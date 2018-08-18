@@ -1,13 +1,20 @@
 
 @font-face {
-    font-family: 'AlexBrush';
-    src:  url('../fonts/alex-brush-v8-latin-regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: cursive;
+    font-family: 'Quicksand';
+    src:  url('../fonts/Quicksand/Quicksand-Medium.ttf') format('ttf');
+    font-weight: normal;
+    font-style: inherit;
+  }
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src:  url('../fonts/Josefin_Sans/JosefinSans-SemiBold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: inherit;
   }
 
 .tigerLabel {
     color: #C50;
     text-align: center;
-    font-family: 'AlexBrush'; 
+    font-family: 'Quicksand'; 
 }
