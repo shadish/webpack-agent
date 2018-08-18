@@ -1,0 +1,30 @@
+* {
+  background-color: #334;
+  color: #AAC;
+}
+.painted {
+  background-color: #459;
+  color: #99A;
+}
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #304;
+}
+.mainBody * {
+  border: 1px dashed #99A;
+}
+body {
+  background-color: #459;
+  color: #99A;
+  font-family: 'Josefin Sans';
+  display: flex;
+}
+body div {
+  border: 1px solid #459;
+  padding: 1em;
+}
+body div :first-child {
+  border: 1px solid #99A;
+}

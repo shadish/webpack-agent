@@ -27,11 +27,11 @@ module.exports = {
         use: ["style-loader", "css-loader", "less-loader"]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(pdf|jpg|png|gif|svg|ico)$/,
         use: ["file-loader"]
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(png|woff|woff2|eot|ttf|otf)$/,
         use: ["file-loader"]
       },
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
@@ -40,10 +40,11 @@ module.exports = {
   },
 
   // Externals are ideal for library developers.
-  // externals: {
+  // externals: {{
   //   react: "React",
   //   "react-dom": "ReactDOM"
   // },
+
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import '../css/some-style.css';
 import '../less/style.less';
-import * as monster_cat from "../images/monster_cat.png";
+const monster_cat = require('../images/monster_cat.png');
 
 export interface HelloProps {
   compiler: string;
@@ -12,13 +12,15 @@ export interface HelloProps {
 // State is never set so we use the '{}' type.
 export class Hello extends React.Component<HelloProps, {}> {
   render() {
+    console.log("FOUND:", monster_cat)
+
     return (
-      <div>
+      <div className="mainBody">
         <h1>
           Hello from {this.props.compiler} and {this.props.framework}!
-      </h1>
-        <span className="tigerLabel">Tiger</span>
-        <monster_cat />
+        </h1>
+        <span className="logoLabel">Some Logo</span>
+        <img src={monster_cat} />
       </div>
     );
   }

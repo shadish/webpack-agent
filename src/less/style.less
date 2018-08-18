@@ -2,6 +2,7 @@
 @some-foreground-color: #AAC;
 @accent-one: #459;
 @accent-two: #99A;
+@accent-three: #304;
  
 * {
   background-color: @some-background-color;
@@ -11,6 +12,17 @@
 .painted {
   background-color: @accent-one;
   color: @accent-two;
+}
+
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: @accent-three;
+
+  * {
+    border: 1px dashed @accent-two;
+  }
 }
 
 body {
