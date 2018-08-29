@@ -1,7 +1,7 @@
-import * as React from 'react';
-import '../css/some-style.css';
-import '../less/style.less';
-const monster_cat = require('../images/monster_cat.png');
+import * as React from 'react'
+import '../css/some-style.css'
+import '../less/style.less'
+import monster_cat from '../images/monster_cat.png'
 
 export interface HelloProps {
   compiler: string;
