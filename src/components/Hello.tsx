@@ -1,7 +1,6 @@
 import * as React from 'react'
 import '../css/some-style.css'
 import '../less/style.less'
-import monster_cat from '../images/monster_cat.png'
 
 export interface HelloProps {
   compiler: string;
@@ -12,7 +11,8 @@ export interface HelloProps {
 // State is never set so we use the '{}' type.
 export class Hello extends React.Component<HelloProps, {}> {
   render() {
-    console.log("FOUND:", monster_cat)
+
+    const monster_cat = require('../images/monster_cat.png')
 
     return (
       <div className="mainBody">

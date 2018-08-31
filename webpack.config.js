@@ -27,11 +27,11 @@ module.exports = {
         use: ["style-loader", "css-loader", "less-loader"]
       },
       {
-        test: /\.(pdf|jpg|png|gif|svg|ico)$/,
-        use: ["file-loader"]
+        test: /\.(pdf|jpg|png|gif|svg|ico)$/i,
+        use: ["file-loader"],
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|otf)$/,
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
         use: ["file-loader"]
       },
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.

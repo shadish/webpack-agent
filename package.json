@@ -20,7 +20,8 @@
     "dev": "webpack-dev-server --mode development --display-error-details",
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "prettier": "prettier --single-quote --trailing-comma es5 --write 'src/**/*.ts*'",
+    "prettier:base": "prettier --parser typescript --single-quote",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write 'src/**/*.{js,jsx,ts,tsx}'",
     "lint": "eslint --config .eslintrc.json src/** --ext .js,.jsx,.ts,.tsx"
   },
   "babel": {
