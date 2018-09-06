@@ -7,3 +7,4 @@ This is intented as a template React/Webpack/TypeScript basic with my prefered s
 1. Thread webpack build execution?
 1. Add Redux
 1. Fix ESLint
+1. Examine 

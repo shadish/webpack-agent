@@ -32,7 +32,13 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        use: ["file-loader"]
+        use: [{
+          loader: "file-loader",
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/'
+          }
+        }]
       },
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
@@ -57,7 +63,6 @@ module.exports = {
   ],
   devServer: {
     contentBase: "./dist",
-    publicPath: "/",
     hot: true
   }
 };

@@ -1,6 +1,8 @@
 import * as React from 'react'
 import '../css/some-style.css'
 import '../less/style.less'
+import '../fonts/Quicksand/Quicksand-Medium.ttf'
+import '../fonts/Josefin_Sans/JosefinSans-SemiBold.ttf'
 
 export interface HelloProps {
   compiler: string;
@@ -19,7 +21,7 @@ export class Hello extends React.Component<HelloProps, {}> {
         <h1>
           Hello from {this.props.compiler} and {this.props.framework}!
         </h1>
-        <span className="logoLabel">Some Logo</span>
+        <span className="logoLabel">Some Logo (quicksand font)</span>
         <img src={monster_cat} />
       </div>
     );
